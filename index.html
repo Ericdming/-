@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来科技 - 欢迎来到2000年代</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000 url('https://i.imgur.com/JFz1hy9.gif') repeat;
+            font-family: "Arial", sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+        
+        #header {
+            margin-top: 20px;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            margin-bottom: 10px;
+            font-family: "Impact", sans-serif;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #ff00ff;
+            text-shadow: 0 0 5px #ff00ff;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        #animation-container {
+            width: 700px;
+            height: 300px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            border: 3px solid #666;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #0066ff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ball {
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        
+        #login-form {
+            width: 400px;
+            margin: 30px auto;
+            background: rgba(0, 0, 50, 0.7);
+            padding: 20px;
+            border: 2px solid #0066ff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #0066ff;
+        }
+        
+        input {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 8px;
+            background: #000033;
+            border: 1px solid #0099ff;
+            color: #00ffff;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        
+        .button-3d {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 10px 30px;
+            background: linear-gradient(to bottom, #0099ff, #0066cc);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 5px 0 #003366, 0 7px 10px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.1s;
+        }
+        
+        .button-3d:active {
+            top: 3px;
+            box-shadow: 0 2px 0 #003366, 0 3px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        #footer {
+            margin: 30px 0;
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .counter {
+            margin: 20px auto;
+            padding: 5px;
+            background: #000;
+            border: 1px solid #333;
+            width: 150px;
+            color: #00ff00;
+            font-family: "Courier New", monospace;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+        
+        #stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+        }
+        
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.7);
+            border-top: 1px solid #0066ff;
+            border-bottom: 1px solid #0066ff;
+            padding: 5px 0;
+            margin: 20px 0;
+        }
+        
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div id="stars"></div>
+    
+    <div id="container">
+        <div id="header">
+            <h1>未来科技门户</h1>
+            <div class="subtitle">探索无限可能 · 引领数字未来</div>
+        </div>
+        
+        <div class="marquee">
+            <div class="marquee-content">
+                欢迎来到未来科技门户！我们提供最先进的技术解决方案 * 加入我们的会员可享受独家优惠 * 新用户注册即送100积分 * 本周热门：虚拟现实体验套装限时8折！
+            </div>
+        </div>
+        
+        <div id="animation-container">
+            <!-- 小球动画已移除 -->
+            <div style="padding: 100px 0; text-align: center;">
+                <h2 style="color: #00ffff; text-shadow: 0 0 10px #00ffff;">未来科技欢迎您</h2>
+                <p style="color: #ff00ff; font-size: 18px;">尖端科技，引领未来</p>
+                <img src="https://i.imgur.com/8ZUMCv2.gif" alt="未来科技" style="margin-top: 20px; max-width: 200px;">
+            </div>
+        </div>
+        
+        <div id="login-form">
+            <h2 style="color: #00ffff; text-shadow: 0 0 5px #00ffff;">用户登录</h2>
+            <input type="text" placeholder="用户名">
+            <input type="password" placeholder="密码">
+            <button class="button-3d">登录系统</button>
+            <button class="button-3d">新用户注册</button>
+            <p class="blink" style="color: #ff0000;">* 新用户注册即送VIP体验 *</p>
+        </div>
+        
+        <div class="counter">
+            访问量: 8,675,309
+        </div>
+        
+        <div id="footer">
+            <p>最佳浏览体验：IE6.0+ | 1024x768分辨率</p>
+            <p>版权所有 © 2005 未来科技 | 联系我们：webmaster@future-tech.com</p>
+            <img src="https://i.imgur.com/JkMtxby.png" alt="88x31 按钮" width="88" height="31">
+            <img src="https://i.imgur.com/h7YJmMV.png" alt="88x31 按钮" width="88" height="31">
+        </div>
+    </div>
+    
+    <script src="animation.js"></script>
+</body>
+</html> 
